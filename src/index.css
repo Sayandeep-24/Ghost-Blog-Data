@@ -15,7 +15,10 @@
   justify-content: space-around;
   width : 100%;
 }
-
+h3
+{
+  text-align: center;
+}
 .lower-boxes
 {
   margin : 10px 10px 10px 0;
@@ -58,7 +61,7 @@ body
 }
 .heading-bottom
 {
-  padding : 1em;
+  padding : 1em 1em 1em 0;
   font-size: 1.4em;
   color :rgba(52, 73, 94, 1)
 }
@@ -81,6 +84,10 @@ a:hover
   .lower-box
   {
     flex-direction: column;
+  }
+  .heading-bottom
+  {
+    padding : 1em;
   }
   .lower-boxes
   {
