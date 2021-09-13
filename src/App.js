@@ -1,23 +1,20 @@
-import logo from './logo.svg';
-import './App.css';
+import TotalPosts from './components/TotalPosts'
+import TotalPages from './components/TotalPages'
+import TotalAuthors from './components/TotalAuthors'
+import TotalTags from './components/TotalTags'
+import PublishedPosts from './components/PublishedPosts'
+
+
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <TotalPosts />
+      <TotalPages />
+      <TotalAuthors />
+      <TotalTags />
+      <PublishedPosts />
     </div>
   );
 }
