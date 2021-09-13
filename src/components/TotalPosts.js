@@ -15,9 +15,9 @@ function TotalPosts()
     }, []);
     
     return (
-    <div className='total-boxes'>  
-    <p>Total number of Posts : </p> 
-     <h4> {posts}</h4>
+    <div className='upper-boxes'>  
+    <p className = 'heading'>Total number of Posts  </p> 
+     <h3> {posts}</h3>
     </div>
     );
 }

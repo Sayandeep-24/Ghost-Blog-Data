@@ -7,13 +7,17 @@ import PostsChart from './components/PostsChart'
 
 function App() {
   return (
-    <div>
-      <TotalPosts />
-      <TotalPages />
-      <TotalAuthors />
-      <TotalTags />
-      <PublishedPosts />
-      <PostsChart />
+    <div className='container'>
+      <div className='upper-box'>
+        <TotalPosts />
+        <TotalPages />
+        <TotalAuthors />
+        <TotalTags />
+      </div>
+      <div className='lower-box'>
+        <PublishedPosts />
+        <PostsChart />
+      </div>
     </div>
   );
 }

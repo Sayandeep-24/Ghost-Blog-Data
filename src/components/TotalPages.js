@@ -15,9 +15,9 @@ function TotalPages()
     }, []);
     
     return (
-    <div className='total-boxes'>  
-    <p>Total number of Pages : </p> 
-     <h4> {pages}</h4>
+    <div className='upper-boxes'>  
+    <p className = 'heading'>Total number of Pages  </p> 
+     <h3 > {pages}</h3>
     </div>
     );
 }

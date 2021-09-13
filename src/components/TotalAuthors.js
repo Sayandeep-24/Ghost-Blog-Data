@@ -15,9 +15,9 @@ function TotalAuthors()
     }, []);
     
     return (
-    <div className='total-boxes'>  
-    <p>Total number of Authors : </p> 
-     <h4> {authors}</h4>
+    <div className='upper-boxes'>  
+    <p className = 'heading'>Total number of Authors </p> 
+     <h3> {authors}</h3>
     </div>
     );
 }

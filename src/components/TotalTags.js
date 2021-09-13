@@ -15,9 +15,9 @@ function TotalTags()
     }, []);
     
     return (
-    <div className='total-boxes'>  
-    <p>Total number of Tags : </p> 
-     <h4> {tags}</h4>
+    <div className='upper-boxes'>  
+    <p className = 'heading'>Total number of Tags  </p> 
+     <h3> {tags}</h3>
     </div>
     );
 }
