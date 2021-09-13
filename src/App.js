@@ -3,9 +3,7 @@ import TotalPages from './components/TotalPages'
 import TotalAuthors from './components/TotalAuthors'
 import TotalTags from './components/TotalTags'
 import PublishedPosts from './components/PublishedPosts'
-
-
-
+import PostsChart from './components/PostsChart'
 
 function App() {
   return (
@@ -15,6 +13,7 @@ function App() {
       <TotalAuthors />
       <TotalTags />
       <PublishedPosts />
+      <PostsChart />
     </div>
   );
 }
