@@ -57,7 +57,10 @@ body
 .heading 
 {
   font-size: 1.3em;
-  color :rgba(52, 73, 94, 1)
+  color :rgba(52, 73, 94, 1);
+  margin-top: 0;
+  margin-bottom : 30px;
+  text-align: center;
 }
 .heading-bottom
 {
