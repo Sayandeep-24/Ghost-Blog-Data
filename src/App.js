@@ -1,23 +1,19 @@
-import TotalPosts from './components/TotalPosts'
-import TotalPages from './components/TotalPages'
-import TotalAuthors from './components/TotalAuthors'
-import TotalTags from './components/TotalTags'
-import PublishedPosts from './components/PublishedPosts'
-import PostsChart from './components/PostsChart'
+
+
+import {Route, Switch} from 'react-router-dom'
+import Dashboard from './Pages/Dashboard'
+import Pages from './Pages/Pages'
+import Posts from './Pages/Posts'
+
 
 function App() {
   return (
-    <div className='container'>
-      <div className='upper-box'>
-        <TotalPosts />
-        <TotalPages />
-        <TotalAuthors />
-        <TotalTags />
-      </div>
-      <div className='lower-box'>
-        <PublishedPosts />
-        <PostsChart />
-      </div>
+    <div>
+      <Switch>
+        <Route path='/' exact><Dashboard /></Route>
+        <Route path='/pages'><Pages /></Route>
+        <Route path='/posts'><Posts /></Route>
+      </Switch>
     </div>
   );
 }

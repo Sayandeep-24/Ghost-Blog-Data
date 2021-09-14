@@ -1,3 +1,39 @@
+.navbar
+{
+  height : 50px;
+  background-color: #1C4E80;
+  display : flex;
+  justify-content: space-between;
+  font-size: 1.3em;
+}
+.page-name
+{
+  padding : 10px 0 0 10px;
+  color : #DCDCDC;
+}
+a
+{
+  text-decoration: none;
+  color : #0091D5;
+}
+.nav-links
+{
+  padding : 10px 0 0 10px;
+}
+.nav-links-styling
+{
+  color : #DCDCDC;
+}
+.nav-links-styling:hover
+{
+  color : #A9A9A9;
+}
+
+.links
+{
+  display:flex;
+  padding-right : 15px;
+}
 .upper-boxes
 {
   margin : 10px 10px 10px 0;
@@ -72,11 +108,7 @@ canvas{
   max-width:600px !important;
   min-height:320px !important;
 }
-a
-{
-  text-decoration: none;
-  color : #0091D5;
-}
+
 a:hover
 {
   color : #1C4E80;
@@ -144,5 +176,13 @@ a:hover
   .heading-bottom
   {
     padding : 0.5em;
+  }
+  .navbar
+  {
+    font-size: 1em;
+  }
+  .page-name,.nav-links
+  {
+    padding : 15px 0 0 10px;
   }
 }

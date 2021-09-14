@@ -32,8 +32,6 @@ function PublishedPosts()
     {
         axios.get(url).then((response) => 
         {
-            
-
             setPublishedPosts([
                 {
                   PostName: response.data.posts[0].title,
