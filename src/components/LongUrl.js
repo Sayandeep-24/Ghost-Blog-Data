@@ -1,8 +1,7 @@
 import axios from "axios";
 import React from "react";
-import { useState } from 'react';
 import NoPostsMessage from "./NoPostsMessage"
-
+import { useState } from 'react';
 
 
 export default function WithoutMeta()
@@ -19,8 +18,8 @@ export default function WithoutMeta()
         {
             for (const post of response.data.posts) 
             {
-                if(post.meta_description ===null)
-                {
+                if(post.meta_description && post.url.length >100)
+                {   
                     setFlag(false);
                     setPublishedPosts(prevState => [...prevState, { postUrl : address.concat(post.url.slice(27)),
                         postName: post.title,
@@ -32,8 +31,8 @@ export default function WithoutMeta()
     }, []);
 
     return (
-    <div className='post-boxes' >  
-        <p className = 'heading-bottom'>Posts without meta tags</p> 
+    <div className='post-boxes'>  
+        <p className = 'heading-bottom'>Too long URL </p> 
         <ul>
             {publishedPosts.map(post => {
                 return (

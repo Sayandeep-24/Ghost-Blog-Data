@@ -1,17 +1,15 @@
 import axios from "axios";
 import React from "react";
+import NoPostsMessage from "./NoPostsMessage";
 import { useState } from 'react';
-import NoPostsMessage from "./NoPostsMessage"
 
 
-
-export default function WithoutMeta()
+export default function WithoutImage()
 {
     const url = "https://ghost-blog.ipxp.in/ghost/api/v4/content/posts/?key=8196190b08906dda0ebf6e6f5d";
     let address = 'https://ghost-blog.ipxp.in/'
     const [publishedPosts, setPublishedPosts] = React.useState([]);
     const [flag, setFlag] = useState(true);
-
 
     React.useEffect(() => 
     {
@@ -19,8 +17,8 @@ export default function WithoutMeta()
         {
             for (const post of response.data.posts) 
             {
-                if(post.meta_description ===null)
-                {
+                if(post.feature_image===null)
+                {   
                     setFlag(false);
                     setPublishedPosts(prevState => [...prevState, { postUrl : address.concat(post.url.slice(27)),
                         postName: post.title,
@@ -32,8 +30,8 @@ export default function WithoutMeta()
     }, []);
 
     return (
-    <div className='post-boxes' >  
-        <p className = 'heading-bottom'>Posts without meta tags</p> 
+    <div className='post-boxes'>  
+        <p className = 'heading-bottom'>Without Featured Image </p> 
         <ul>
             {publishedPosts.map(post => {
                 return (

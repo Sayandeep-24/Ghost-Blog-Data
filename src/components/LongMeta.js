@@ -4,7 +4,6 @@ import { useState } from 'react';
 import NoPostsMessage from "./NoPostsMessage"
 
 
-
 export default function WithoutMeta()
 {
     const url = "https://ghost-blog.ipxp.in/ghost/api/v4/content/posts/?key=8196190b08906dda0ebf6e6f5d";
@@ -19,7 +18,7 @@ export default function WithoutMeta()
         {
             for (const post of response.data.posts) 
             {
-                if(post.meta_description ===null)
+                if(post.meta_description && post.meta_description.length >155)
                 {
                     setFlag(false);
                     setPublishedPosts(prevState => [...prevState, { postUrl : address.concat(post.url.slice(27)),
@@ -32,8 +31,8 @@ export default function WithoutMeta()
     }, []);
 
     return (
-    <div className='post-boxes' >  
-        <p className = 'heading-bottom'>Posts without meta tags</p> 
+    <div className='post-boxes' id='long-meta'>  
+        <p className = 'heading-bottom'>Too long meta description </p> 
         <ul>
             {publishedPosts.map(post => {
                 return (

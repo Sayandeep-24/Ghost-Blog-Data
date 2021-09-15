@@ -114,6 +114,103 @@ a:hover
   color : #1C4E80;
 }
 
+/* STYLING FOR POSTS PAGE  */
+
+.none-found
+{
+  text-align: center;
+  padding : 1em;
+  color : #1C4E80;
+}
+.post-boxes
+{
+  margin : 10px 10px 10px 0;
+  padding : 1em;
+  background-color : #F1F1F1;
+  width : 46vw;
+}
+
+.post-posts
+{
+  padding : 5px;
+  font-size: 1em;
+}
+.posts-container
+{
+  display : flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+.posts-container:nth-child(1n)
+{
+  margin-left: 10px;
+}
+#long-meta
+{
+  height : 89%;
+}
+
+@media(max-width : 1000px)
+{
+  .post-boxes
+  {
+    width : 44vw;
+  }
+}
+@media(max-width : 800px)
+{
+  .post-boxes
+  {
+    width : 92vw;
+    margin-right : 0;
+  }
+  .posts-container
+  {
+    flex-direction: column;
+  }
+}
+@media(max-width : 600px)
+{
+  .post-boxes
+  {
+    width : 90vw;
+  }
+}
+@media(max-width : 500px)
+{
+  .post-boxes
+  {
+    width : 88vw;
+  }
+}
+@media(max-width : 400px)
+{
+  .post-boxes
+  {
+    width : 85vw;
+  }
+  .post-posts
+  {
+    padding : 5px;
+    font-size: 0.9em;
+    margin-right : 10px
+  }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+/* STYLING FOR POSTS PAGE  */
+
+
 @media(max-width : 1000px)
 {
   .lower-box
