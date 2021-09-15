@@ -4,7 +4,7 @@ import React from "react";
 function TotalLinks()
 {
     const url = "https://ghost-blog.ipxp.in/ghost/api/v4/content/posts/?key=8196190b08906dda0ebf6e6f5d";
-    let internal ='https://ghost-blog.ipxp.in/';
+    let internal ='https://ghost';
 
     const [Links, setLinks] = React.useState(0);
     const [InternalLinks, setInternalLinks] = React.useState(0);
@@ -36,7 +36,7 @@ function TotalLinks()
                 totalLinks = totalLinks+(link.length);
 
                 for (const c of link) {
-                    let urlBeginning=c.href.slice(0,26);
+                    let urlBeginning=c.href.slice(0,13);
                     if(urlBeginning===internal)
                     {
                         totalInternalLinks++;
@@ -55,12 +55,12 @@ function TotalLinks()
     }, []);
     
     return (
-    <div className='upper-boxes'>  
-    <p className = 'heading'>Total number of Links </p> 
+    <div className='pages-upper-box'>  
+    <p className = 'pages-heading'>Total number of Links </p> 
      <h3> {Links}</h3>
-     <p className = 'heading'>Total number of Internal Links </p> 
+     <p className = 'pages-heading'>Total number of Internal Links </p> 
      <h3> {InternalLinks}</h3>
-     <p className = 'heading'>Total number of External Links </p> 
+     <p className = 'pages-heading'>Total number of External Links </p> 
      <h3> {ExternalLinks}</h3>
 
     </div>

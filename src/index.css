@@ -197,18 +197,102 @@ a:hover
   }
 
 }
-
-
-
-
-
-
-
-
-
-
-
 /* STYLING FOR POSTS PAGE  */
+
+
+
+/* STYLING FOR PAGES */
+
+.pages-boxes
+{
+  margin : 10px 10px 10px 0;
+  padding : 1em;
+  background-color : #F1F1F1;
+  width : 35vw;
+  word-wrap: break-word; 
+}
+.pages-upper-box
+{
+    width : 20vw;
+    margin : 10px;
+    padding : 1em;
+    background-color : #F1F1F1;  
+}
+
+.pages-posts
+{
+  padding : 5px;
+  font-size: 1em;
+}
+.pages-container
+{
+  display : flex;
+}
+.pages-heading 
+{
+  font-size: 1.3em;
+  color :rgba(52, 73, 94, 1);
+  margin-top: 0;
+  margin-bottom : 30px;
+}
+
+@media(max-width : 667px)
+{
+  .pages-container
+  {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .pages-boxes
+  {
+    margin : 10px 10px 10px 10px;
+    width : 94vw;
+    padding : 0;
+  }
+  .pages-upper-box
+  {
+    width : 89vw;
+  }
+  .pages-heading 
+  {
+    font-size: 1.2em;
+    color :rgba(52, 73, 94, 1);
+  }
+
+}  
+@media(max-width : 510px)
+{
+  .pages-upper-box
+  {
+    width : 87vw;
+  }
+
+}
+@media(max-width : 450px)
+{
+  .pages-upper-box
+  {
+    width : 86vw;
+  }
+
+}
+@media(max-width : 350px)
+{
+  .pages-upper-box
+  {
+    width : 84vw;
+  }
+
+}
+
+
+
+
+/* STYLING FOR PAGES */
+
+
+
 
 
 @media(max-width : 1000px)

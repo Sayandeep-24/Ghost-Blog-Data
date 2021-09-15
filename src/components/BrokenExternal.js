@@ -6,7 +6,7 @@ import $ from 'jquery';
 
 
 
-export default function BrokenInternal()
+export default function BrokenExternal()
 {
     const url = "https://ghost-blog.ipxp.in/ghost/api/v4/content/posts/?key=8196190b08906dda0ebf6e6f5d";
     let internal ='https://ghost';
@@ -22,9 +22,7 @@ export default function BrokenInternal()
         return link;
     }
     
-
-          
-      
+    
 
     React.useEffect(() => 
     {
@@ -38,6 +36,11 @@ export default function BrokenInternal()
                     let urlBeginning=c.href.slice(0,13);
                     if(urlBeginning===internal)
                     {
+  
+                    }
+                    else
+                    {
+
                         $.get(c.href).done(function () {
                             console.log("success");
                           }).fail(function () {
@@ -46,9 +49,8 @@ export default function BrokenInternal()
                                 id : post.id
                               }]);  
                           });
-                    
 
-                          
+                        
                     }
                   }
             }
@@ -58,7 +60,7 @@ export default function BrokenInternal()
 
     return (
     <div className='pages-boxes'>  
-        <p className = 'heading-bottom'>Broken Internal Pages </p> 
+        <p className = 'heading-bottom'>Broken External Pages </p> 
         <ul>
             {publishedPosts.map(post => {
                 return (
