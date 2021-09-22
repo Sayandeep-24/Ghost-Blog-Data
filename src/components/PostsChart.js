@@ -28,7 +28,8 @@ function TotalPosts()
                   borderWidth: 2,                
                 }                 
               ]             
-            });
+            },
+            );
           });
     }, []);
 
@@ -37,6 +38,11 @@ function TotalPosts()
     <p className = 'heading-bottom'>Posts per month </p> 
     <div className='chart'>
         <Bar data={chartData} options={{
+              plugins: {
+                legend: {
+                  display: false
+                }
+              },            
             responsive: true,
             maintainAspectRatio : false,
             scales: {

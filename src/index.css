@@ -9,7 +9,7 @@
 .page-name
 {
   padding : 10px 0 0 10px;
-  color : #DCDCDC;
+  color : #f6f6f6;
 }
 a
 {
@@ -22,11 +22,11 @@ a
 }
 .nav-links-styling
 {
-  color : #DCDCDC;
+  color : #f6f6f6;
 }
 .nav-links-styling:hover
 {
-  color : #A9A9A9;
+  color : #d7d7d7;
 }
 
 .links
@@ -38,7 +38,7 @@ a
 {
   margin : 10px 10px 10px 0;
   padding : 1em;
-  background-color : #F1F1F1;
+  background-color : #ffffff;
   width : 22%;
 }
 .upper-boxes:nth-child(1)
@@ -59,7 +59,7 @@ h3
 {
   margin : 10px 10px 10px 0;
   padding : 1em;
-  background-color : #F1F1F1;
+  background-color : #ffffff;
   width : 46.5%;
 }
 .lower-boxes:nth-child(1)
@@ -71,8 +71,8 @@ body
 {
   margin : 0;
   height : 100vh;
-  background-color : #DADADA;
-  font-family: 'Times New Roman', Times, serif;
+  background-color : #f6f6f6;
+  font-family: 'Lato';
   box-sizing: border-box;
 }
 
@@ -126,7 +126,7 @@ a:hover
 {
   margin : 10px 10px 10px 0;
   padding : 1em;
-  background-color : #F1F1F1;
+  background-color : #ffffff;
   width : 45vw;
 }
 
@@ -207,7 +207,7 @@ a:hover
 {
   margin : 10px 10px 10px 0;
   padding : 1em;
-  background-color : #F1F1F1;
+  background-color : #ffffff;
   width : 35vw;
   word-wrap: break-word; 
 }
@@ -216,7 +216,7 @@ a:hover
     width : 20vw;
     margin : 10px;
     padding : 1em;
-    background-color : #F1F1F1;  
+    background-color : #ffffff;  
 }
 
 .pages-posts

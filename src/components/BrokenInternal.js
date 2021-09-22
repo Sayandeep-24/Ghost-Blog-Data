@@ -45,10 +45,7 @@ export default function BrokenInternal()
                             setPublishedPosts(prevState => [...prevState, { postUrl : c.href,
                                 id : post.id
                               }]);  
-                          });
-                    
-
-                          
+                          });                        
                     }
                   }
             }

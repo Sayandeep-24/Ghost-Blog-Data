@@ -22,7 +22,6 @@ export default function BrokenExternal()
         return link;
     }
     
-    
 
     React.useEffect(() => 
     {
@@ -32,30 +31,34 @@ export default function BrokenExternal()
             {
                 let rawHTML = post.html;
                 let link = getTotalLinks(rawHTML);
-                for (const c of link) {
+                for (const c of link) 
+                {
                     let urlBeginning=c.href.slice(0,13);
-                    if(urlBeginning===internal)
+                    if(urlBeginning!==internal)
                     {
-  
-                    }
-                    else
-                    {
+                        $.ajax({
+                            url: c.href,
+                            type: 'GET',
+                            dataType: 'jsonp',
+                            complete: function(jqXHR, textStatus) 
+                            {
+                                console.log(jqXHR.status);  // '200' = url reachable
+                                if(jqXHR.status!=200)
+                                {
+                                    setFlag(false);
+                                    setPublishedPosts(prevState => [...prevState, { postUrl : c.href,
+                                        id : post.id
+                                        }]);  
+                                }
+                            },
+                            timeout: 2000
+                            });
 
-                        $.get(c.href).done(function () {
-                            console.log("success");
-                          }).fail(function () {
-                            setFlag(false);
-                            setPublishedPosts(prevState => [...prevState, { postUrl : c.href,
-                                id : post.id
-                              }]);  
-                          });
-
-                        
-                    }
-                  }
+                    }     
+                }
             }
         });
-    }, []);
+    }, []);
 
 
     return (
