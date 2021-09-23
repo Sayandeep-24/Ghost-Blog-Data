@@ -50,7 +50,7 @@ export default function BrokenExternal()
                                         }]);  
                                 }
                             },
-                            timeout: 2000
+                            timeout: 3000
                             });
 
                     }     
