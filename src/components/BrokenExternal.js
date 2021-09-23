@@ -42,7 +42,6 @@ export default function BrokenExternal()
                             dataType: 'jsonp',
                             complete: function(jqXHR, textStatus) 
                             {
-                                console.log(jqXHR.status);  // '200' = url reachable
                                 if(jqXHR.status!=200)
                                 {
                                     setFlag(false);

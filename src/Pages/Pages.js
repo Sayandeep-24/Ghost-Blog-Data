@@ -7,7 +7,7 @@ function Pages()
 {
     return (
     <div>
-        <div><Navbar /></div>
+        <div><Navbar page='pages'/></div>
         <div className='pages-container'>
             <TotalLinks />
             <BrokenInternal />

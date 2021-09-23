@@ -10,7 +10,7 @@ import Navbar from '../components/Navbar'
 function Dashboard()
 {
     return (<div className='container'>
-    <div><Navbar /></div>
+    <div><Navbar page='dashboard'/></div>
     <div className='upper-box'>
       <TotalPosts />
       <TotalPages />

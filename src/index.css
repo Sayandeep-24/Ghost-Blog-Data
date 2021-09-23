@@ -22,12 +22,22 @@ a
 }
 .nav-links-styling
 {
+  color : #D3D3D3;
+}
+.nav-links-styling-active
+{
   color : #f6f6f6;
+
 }
 .nav-links-styling:hover
 {
-  color : #d7d7d7;
+  color : #C0C0C0;
 }
+.nav-links-styling-active:hover
+{
+  color : #f6f6f6;
+}
+
 
 .links
 {

@@ -12,7 +12,7 @@ function Posts()
 {
     return (
     <div>
-        <div><Navbar /></div>
+        <div><Navbar page='posts'/></div>
         <div className='posts-container'>
             <div><WithoutMeta /></div>
             <div><LongMeta /></div>

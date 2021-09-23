@@ -39,7 +39,6 @@ export default function BrokenInternal()
                     if(urlBeginning===internal)
                     {
                         $.get(c.href).done(function () {
-                            console.log("success");
                           }).fail(function () {
                             setFlag(false);
                             setPublishedPosts(prevState => [...prevState, { postUrl : c.href,
