@@ -374,6 +374,9 @@ a:hover
   }
   .page-name,.nav-links
   {
-    padding : 15px 0 0 10px;
+    padding : 10px 0 0 7px;
   }
+}
+@media (hover: none) {
+  a:hover { color: inherit; }
 }

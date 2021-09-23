@@ -4,7 +4,6 @@ import React, { useState } from "react";
 
 function Navbar(props)
 {
-    console.log(props.page);
     return (
         <div className='navbar'>
             <div className='page-name'>Ghost Blog Data</div>
