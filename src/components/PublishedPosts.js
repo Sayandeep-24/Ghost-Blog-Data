@@ -3,8 +3,8 @@ import React from "react";
 
 function PublishedPosts()
 {
-    const url = "https://ghost-blog.ipxp.in/ghost/api/v4/content/posts/?key=8196190b08906dda0ebf6e6f5d";
-    let address = 'https://ghost-blog.ipxp.in/'
+  let url="https://demo.ghost.io/ghost/api/v3/content/posts/?key=22444f78447824223cefc48062";
+  let address = 'https://demo.ghost.io/'
     const [publishedPosts, setPublishedPosts] = React.useState([
         {
           PostName: null,
@@ -35,23 +35,23 @@ function PublishedPosts()
             setPublishedPosts([
                 {
                   PostName: response.data.posts[0].title,
-                  postUrl: address.concat(response.data.posts[0].url.slice(27)),
+                  postUrl: address.concat(response.data.posts[0].url.slice(22)),
                 },
                 {
                   PostName: response.data.posts[1].title,
-                  postUrl: address.concat(response.data.posts[1].url.slice(27)),
+                  postUrl: address.concat(response.data.posts[1].url.slice(22)),
                 },
                 {
                   PostName: response.data.posts[2].title,
-                  postUrl: address.concat(response.data.posts[2].url.slice(27)),
+                  postUrl: address.concat(response.data.posts[2].url.slice(22)),
                 },
                 {
                   PostName: response.data.posts[3].title,
-                  postUrl: address.concat(response.data.posts[3].url.slice(27)),
+                  postUrl: address.concat(response.data.posts[3].url.slice(22)),
                 },
                 {
                   PostName: response.data.posts[4].title,
-                  postUrl: address.concat(response.data.posts[4].url.slice(27)),
+                  postUrl: address.concat(response.data.posts[4].url.slice(22)),
                 },
               ]);
         });

@@ -8,8 +8,8 @@ import $ from 'jquery';
 
 export default function BrokenExternal()
 {
-    const url = "https://ghost-blog.ipxp.in/ghost/api/v4/content/posts/?key=8196190b08906dda0ebf6e6f5d";
-    let internal ='https://ghost';
+    let url="https://demo.ghost.io/ghost/api/v3/content/posts/?key=22444f78447824223cefc48062";
+    let internal ='https://demo.ghost.io';
     const [publishedPosts, setPublishedPosts] = React.useState([]);
     const [flag, setFlag] = useState(true);
 
@@ -33,7 +33,7 @@ export default function BrokenExternal()
                 let link = getTotalLinks(rawHTML);
                 for (const c of link) 
                 {
-                    let urlBeginning=c.href.slice(0,13);
+                    let urlBeginning=c.href.slice(0,22);
                     if(urlBeginning!==internal)
                     {
                         $.ajax({

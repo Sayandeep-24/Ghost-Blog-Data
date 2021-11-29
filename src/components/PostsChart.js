@@ -5,8 +5,8 @@ import { Bar } from "react-chartjs-2";
 
 function TotalPosts()
 {
-    const url = "https://ghost-blog.ipxp.in/ghost/api/v4/content/posts/?key=8196190b08906dda0ebf6e6f5d";
-    let noOfPosts = [0,0,0,0,0,0,0,0,0,0,0,0];
+  let url="https://demo.ghost.io/ghost/api/v3/content/posts/?key=22444f78447824223cefc48062";
+  let noOfPosts = [0,0,0,0,0,0,0,0,0,0,0,0];
     let months = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
     const [chartData, setChartData] = React.useState({});
 

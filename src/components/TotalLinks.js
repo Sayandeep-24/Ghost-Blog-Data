@@ -3,8 +3,8 @@ import React from "react";
 
 function TotalLinks()
 {
-    const url = "https://ghost-blog.ipxp.in/ghost/api/v4/content/posts/?key=8196190b08906dda0ebf6e6f5d";
-    let internal ='https://ghost';
+    let url="https://demo.ghost.io/ghost/api/v3/content/posts/?key=22444f78447824223cefc48062";
+    let internal ='https://demo.ghost.io';
 
     const [Links, setLinks] = React.useState(0);
     const [InternalLinks, setInternalLinks] = React.useState(0);

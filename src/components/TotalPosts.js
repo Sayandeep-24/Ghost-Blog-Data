@@ -2,8 +2,9 @@ import axios from "axios";
 import React from "react";
 
 function TotalPosts()
-{
-    const url = "https://ghost-blog.ipxp.in/ghost/api/v4/content/posts/?key=8196190b08906dda0ebf6e6f5d";
+{    
+    let url="https://demo.ghost.io/ghost/api/v3/content/posts/?key=22444f78447824223cefc48062";
+
     const [posts, setPost] = React.useState(0);
 
     React.useEffect(() => 

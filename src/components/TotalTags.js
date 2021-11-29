@@ -3,14 +3,14 @@ import React from "react";
 
 function TotalTags()
 {
-    const url = "https://ghost-blog.ipxp.in/ghost/api/v4/content/tags/?key=8196190b08906dda0ebf6e6f5d";
+    let url="https://demo.ghost.io/ghost/api/v3/content/posts/?key=22444f78447824223cefc48062";
     const [tags, setTags] = React.useState(0);
 
     React.useEffect(() => 
     {
         axios.get(url).then((response) => 
         {
-            setTags(response.data.tags.length);
+            setTags(response.data.posts.length);
         });
     }, []);
     
